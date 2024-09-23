@@ -1,0 +1,8 @@
+const browser = 'Edge';
+if (browser === 'Edge') {
+  console.log('You have got the Edge!');
+} else if (browser === 'Chrome' || browser === 'Firefox' || browser === 'Safari' || browser === 'Opera') {
+  console.log('Okay we support these browsers too');
+} else {
+  console.log('We hope that this page looks ok!');
+}
