@@ -1,8 +1,8 @@
 function min(a, b) {
   if (a < b) {
-    console.log(a);
+    return a;
   } else {
-    console.log(b);
+    return b;
   }
 }
-min(1, 1);
+console.log(min(4, 5));

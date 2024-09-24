@@ -1,5 +1,5 @@
 function pow(x, n) {
   x = x ** n;
-  console.log(x);
+  return x;
 }
-pow(2, 5);
+console.log(pow(2, 5));

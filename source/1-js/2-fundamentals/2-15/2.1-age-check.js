@@ -1,5 +1,4 @@
 function checkAge(age) {
-  const result = age > 18 ? console.log(true) : console.log('Родители разрешили?');
-  return result;
+  return age > 18 ? console.log(true) : console.log('Родители разрешили?');
 }
-checkAge(17);
+checkAge(19);
