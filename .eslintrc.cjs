@@ -49,7 +49,9 @@ module.exports = {
     ],
     'comma-dangle': ['error', 'always-multiline'],
     'no-console': 0,
+    'no-alert': 0,
     'check-file/folder-naming-convention': 0,
+    'check-file/filename-naming-convention': 0,
     'curly': ['error', 'all'],
     'quotes': [
       'error',
