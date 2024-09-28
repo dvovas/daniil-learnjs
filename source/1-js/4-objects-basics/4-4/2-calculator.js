@@ -1,4 +1,4 @@
-'use-strict'
+'use-strict';
 const calculator = {
   read() {
     this.a = prompt('Введите первое значение', '0');
@@ -10,7 +10,6 @@ const calculator = {
   mul() {
     return this.a * this.b;
   },
-
 };
 
 calculator.read();

@@ -1,4 +1,4 @@
-'use-strict'
+'use-strict';
 function Calculator() {
   this.a = 0;
   this.b = 0;

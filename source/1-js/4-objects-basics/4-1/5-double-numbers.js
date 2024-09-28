@@ -5,9 +5,8 @@ const menu = {
   title: 'My menu',
 };
 
-for (let obj in menu) {
-  let whatType = typeof menu[obj];
-  let n = 0;
+for (const obj in menu) {
+  const whatType = typeof menu[obj];
   if (whatType === 'number') {
     menu[obj] = menu[obj] * 2;
   }

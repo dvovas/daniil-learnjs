@@ -1,5 +1,5 @@
-'use-strict'
-let ladder = {
+'use-strict';
+const ladder = {
   step: 0,
   up() {
     this.step++;

@@ -6,4 +6,3 @@ user.name = 'Pete';
 delete user.name;
 
 console.log(user);
-

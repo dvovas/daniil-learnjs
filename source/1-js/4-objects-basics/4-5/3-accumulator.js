@@ -1,4 +1,4 @@
-'use-strict'
+'use-strict';
 
 function Accumulator(startingValue) {
   this.value = startingValue;
@@ -8,7 +8,7 @@ function Accumulator(startingValue) {
   };
 }
 
-let accumulator = new Accumulator(1);
+const accumulator = new Accumulator(1);
 
 accumulator.read();
 accumulator.read();
