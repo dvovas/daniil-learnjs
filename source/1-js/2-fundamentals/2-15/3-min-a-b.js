@@ -5,4 +5,4 @@ function min(a, b) {
     return b;
   }
 }
-console.log(min(4, 5));
+console.log(min(8, 7));
