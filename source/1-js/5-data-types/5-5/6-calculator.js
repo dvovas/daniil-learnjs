@@ -5,13 +5,9 @@ function Calculator() {
   };
   this.calculate = function (str) {
     const test = str.split(' ');
-    // console.log(test);
-    const a = +test[0];
-    const b = +test[2];
+    const a = Number(test[0]);
+    const b = Number(test[2]);
     const c = test[1];
-    // console.log(a);
-    // console.log(b);
-    // console.log(c);
     console.log(this.methods[c](a, b));
     return this.methods[c](a, b);
   };

@@ -1,5 +1,4 @@
-const arr = ['HTML', 'JavaScript', 'CSS'];
-const copy = arr.slice();
-const sorted = copy.sort((a, b) => a.localeCompare(b));
+const arr = ['HTML', 'DavaScript', 'CSS'];
+const sorted = arr.slice().sort((a, b) => a.length - b.length);
 console.log(sorted);
 console.log(arr);

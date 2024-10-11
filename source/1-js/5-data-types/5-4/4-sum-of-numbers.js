@@ -3,19 +3,15 @@ function sumInput() {
   const value = [];
   let input = 0;
   let sum = 0;
-  let number = 0;
   do {
     input = prompt('Введите число', '0');
-    number = +input;
-    if (input === null) {
-      break;
-    } else if (typeof number === 'number' && !Number.isNaN(number)) {
-      value.push(number);
+    if (input !== null && !Number.isNaN(Number(input)) && input !== '') {
+      value.push(Number(input));
     }
-  } while (typeof number === 'number' && !Number.isNaN(number));
+  } while (input !== null && !Number.isNaN(Number(input)) && input !== '');
   for (let i = 0; i < value.length; i++) {
     sum = sum + value[i];
   }
-  alert(sum);
+  return sum;
 }
-sumInput();
+alert(sumInput());

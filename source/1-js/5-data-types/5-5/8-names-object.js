@@ -5,11 +5,10 @@ const masha = { name: 'Маша', surname: 'Петрова', id: 3 };
 const users = [vasya, petya, masha];
 console.log(users);
 const usersMapped = users.map((user) => {
-  const test = {
+  return {
     fullName: `${user.name} ${user.surname}`,
     id: user.id,
   };
-  return test;
 });
 
 console.log(usersMapped[0].fullName);

@@ -1,9 +1,10 @@
 const truncate = function (str, maxlength) {
-  if (str.length > maxlength) {
-    str = `${str.substring(0, --maxlength)}...`;
-    return str;
+  let result = str;
+  if (result.length > maxlength) {
+    result = `${str.substring(0, maxlength - 1)}...`;
+    return result;
   } else {
-    return str;
+    return result;
   }
 };
 

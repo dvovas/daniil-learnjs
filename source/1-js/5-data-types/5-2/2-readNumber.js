@@ -1,13 +1,15 @@
 'use-strict';
 function readNumber() {
   let value;
-  while (Number.isNaN(value / 2)) {
-    value = Number(prompt('Введите число', '0'));
-  }
-  if (typeof value === 'number') {
-    return `Число: ${value}`;
-  } else {
+  const number = Number(value);
+  do {
+    value = prompt('Введите число', '0');
+    console.log(value);
+  } while (Number.isNaN(Number(value)));
+  if (number === null || value === '') {
     return 'Число: null';
+  } else if (typeof number === 'number') {
+    return `Число: ${value}`;
   }
 }
 alert(readNumber());

@@ -2,7 +2,7 @@ const camelize = function (str) {
   return str
     .split('-')
     .filter((symbol) => symbol !== '')
-    .map((symbol) => symbol[0].toUpperCase() + symbol.slice(1))
+    .map((symbol) => `${symbol[0].toUpperCase()}${symbol.slice(1)}`)
     .join('');
 };
 

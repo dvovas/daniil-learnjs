@@ -1,6 +1,8 @@
 const extractCurrencyValue = function (currency) {
-  if (currency.at(2) / 2 !== Number()) {
+  if (Number.isNaN(Number(currency.at(0)))) {
     return currency.substring(1, currency.length);
+  } else {
+    return currency;
   }
 };
 console.log(extractCurrencyValue('$120'));
