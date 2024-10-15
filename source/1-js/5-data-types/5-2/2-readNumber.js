@@ -4,7 +4,6 @@ function readNumber() {
   const number = Number(value);
   do {
     value = prompt('Введите число', '0');
-    console.log(value);
   } while (Number.isNaN(Number(value)));
   if (number === null || value === '') {
     return 'Число: null';
