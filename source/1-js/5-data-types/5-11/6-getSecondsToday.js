@@ -1,4 +1,4 @@
-const getSecondToday = function () {
+const getSecondToday = () => {
   const date = new Date();
   const startDate = new Date(
     date.getFullYear(),

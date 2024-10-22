@@ -1,10 +1,10 @@
 const set = new Set();
-function unique(arr) {
+const unique = (arr) => {
   for (const value of arr) {
     set.add(value);
   }
   return Array.from(set);
-}
+};
 
 const values = ['Hare', 'Krishna', 'Hare', 'Krishna',
   'Krishna', 'Krishna', 'Hare', 'Hare', ':-O'];

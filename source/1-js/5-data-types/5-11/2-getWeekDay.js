@@ -1,4 +1,4 @@
-const getWeekDay = function (dates) {
+const getWeekDay = (dates) => {
   const days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
 
   return days[dates.getDay()];

@@ -1,4 +1,4 @@
-const getSecondToTomorrow = function () {
+const getSecondToTomorrow = () => {
   const date = new Date();
   const endDate = new Date(
     date.getFullYear(),

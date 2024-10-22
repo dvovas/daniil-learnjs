@@ -3,8 +3,6 @@ const user = {
   age: 30,
 };
 
-const count = function (obj) {
-  return Object.keys(obj).length;
-};
+const count = (obj) => Object.keys(obj).length;
 
 console.log(count(user));

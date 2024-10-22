@@ -6,7 +6,7 @@ const salaries = {
 
 let sum = 0;
 
-const sumSalaries = function (obj) {
+const sumSalaries = (obj) => {
   for (const value of Object.values(obj)) {
     sum += value;
   }

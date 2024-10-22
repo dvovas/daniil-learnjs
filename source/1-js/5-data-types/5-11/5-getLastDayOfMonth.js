@@ -1,4 +1,3 @@
-const getLastDayOfMonth = function (year, month) {
-  return new Date(year, month + 1, 0).getDate();
-};
+const getLastDayOfMonth = (year, month) =>
+  new Date(year, month + 1, 0).getDate();
 console.log(getLastDayOfMonth(2012, 1));
