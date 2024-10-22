@@ -4,6 +4,6 @@ const getWeekDay = function (dates) {
   return days[dates.getDay()];
 };
 
-const date = new Date(2014, 0, 3);
+const date = new Date(2012, 0, 7);
 
 console.log(getWeekDay(date));

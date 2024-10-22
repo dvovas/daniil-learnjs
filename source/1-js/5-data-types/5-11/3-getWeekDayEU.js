@@ -1,7 +1,11 @@
 const getWeekDay = function (dates) {
-  const days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+  // const days = ['ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ', 'ВС'];
 
-  return days[dates.getDay()];
+  if (dates.getDay() === 0) {
+    return 7;
+  } else {
+    return dates.getDay();
+  }
 };
 
 const date = new Date(2012, 0, 3);
