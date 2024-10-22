@@ -1,12 +1,12 @@
 const getSecondToday = function () {
-  const a = new Date();
-  const x = new Date(
-    a.getFullYear(),
-    a.getMonth(),
-    a.getDate(),
+  const date = new Date();
+  const startDate = new Date(
+    date.getFullYear(),
+    date.getMonth(),
+    date.getDate(),
   );
-  const y = Date.now();
-  return Math.round((y - x) / 1000);
+  const endDate = Date.now();
+  return Math.round((endDate - startDate) / 1000);
 };
 getSecondToday();
 console.log(getSecondToday());

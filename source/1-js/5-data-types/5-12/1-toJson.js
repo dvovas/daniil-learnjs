@@ -3,7 +3,7 @@ const user = {
   age: 35,
 };
 
-const userJson = JSON.stringify(user);
-console.log(userJson);
-const normalUser = JSON.parse(userJson);
-console.log(normalUser);
+const userString = JSON.stringify(user);
+console.log(userString);
+const userObject = JSON.parse(userString);
+console.log(userObject);

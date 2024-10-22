@@ -1,11 +1,11 @@
 const getSecondToTomorrow = function () {
-  const a = new Date();
-  const x = new Date(
-    a.getFullYear(),
-    a.getMonth(),
-    a.getDate() + 1,
+  const date = new Date();
+  const endDate = new Date(
+    date.getFullYear(),
+    date.getMonth(),
+    date.getDate() + 1,
   );
-  const y = Date.now();
-  return Math.round((x - y) / 1000);
+  const startDate = Date.now();
+  return Math.round((endDate - startDate) / 1000);
 };
 console.log(getSecondToTomorrow());

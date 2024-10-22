@@ -1,9 +1,9 @@
 const getWeekDay = function (dates) {
-  const days = ['ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ', 'ВС'];
+  const days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
 
-  return days[dates.getDay() - 1];
+  return days[dates.getDay()];
 };
 
-const date = new Date(2012, 0, 3);
+const date = new Date(2014, 0, 3);
 
 console.log(getWeekDay(date));
